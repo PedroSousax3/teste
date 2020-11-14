@@ -1,0 +1,42 @@
+Modulo Acesso
+
+001.Cadastrar Cliente - Usuario que acessarem o site deve conseguir realizar seu cadastro para terem acesso a [compra, favoritos, carinho], neste cadastro é obrigatório a coleta no nome completo, cpf, email, usuario e senha.
+
+002.Realizar Login - Já devidamente cadastrado no sistema deve ser possível realizar login com seu email ou usuário e senha.
+
+003.Recuperar Senha - Caso necessário o usuário deve poder realizar o cadastro de sua senha, para isso deve informar o cpf e numero de telefone ou e-mail cadastrado, após informar os dados será enviado para ele um codigo que deverá digitar no codigo par pode alterar sua senha, tempo valido do codigo é de 2 horas.
+
+004.Cadastro de Funcionario - O cadastro de funcionario é permitido apenas aos funcionarios com cargo de administrador do sistema, dados a eles a função de cadastrar todos os funcionarios que adicionaram novos anuncios ao sistema.
+
+
+005.Remover Funcionario - Os funcionario administradores ponderam remover os funcionario cadastrados no sistema.
+
+----------------------------------------------------------------------------------------------------------
+
+Modulo Anuncios:
+
+001.Listar Livros - Não é nescessario ter cadastro de para acessar essa funcionalidade, nela deve ser possivel visualizar todos os livros cadastrados no sistema. Caso o usuario esteja logado o sistema poderá se basear em suar ultimas compras, carinhos e produtos adicionados como favoritos para trazer um catalogo mais utilizado ao usuario.
+
+002.Pesquisar Livros por Filtro - Não é nescessario ter cadastro de para acessar essa funcionalidade, nela deve ser possivel adicionar filtros a pesquisa[por genero, ano de lancamento, titulo, autor, editora, edicao ...].
+
+003.Favoritar Livro - Nesta funcinalidade usuario deve estar devidamente cadastrado como listado no requisito 001.Cadastrar Cliente do modulo de acesso, nela o usuario do sistema poderá adicionar os livros que tem interesse um seu lista de favoritos facilitando o acesso a ele.
+
+004.Selecionar Produto - Não é nescessario ter cadastro de para acessar essa funcionalidade, após consultar o livros no catálogo, deve ser possivel visualizar todas as informações de um livros ao selecionlo, tendo também com adicionar ao carrinho, ler a sinopse do livro, calcular frete.
+
+005.Adicionar Livro - Funcionarios deve conseguir adicionar livros ao sistem, apartir na pagina de adicionar livro deve ser possivel adicionar autor, editora e total as outra informaões de um livro
+
+----------------------------------------------------------------------------------------------------------
+
+Modulo Compra:
+
+001.Adicionar Livro ao Carrinho de Compra - Deve ser possível a usuarios cadastrados adicionarem item ao carrinho, facilitando a compra de item, neste carrinho deve ter a opção de marcar os livros que deseja comprar e os que não deve permanecer desmarcados, caso não marque nem um será considerado todos apartir desses dados deve ser porssivel realizar o calculo e a seleção do endereço de entrega.
+
+002.Excluir Livro ao Carrinho de Compra - Caso deseje usuario deve poder remover livros de seu carrinho;
+
+003.Calcular freet, para isso deve-se passado o cep ou um endereço cadastrado, sistema deve calcular o frete com base nesta informações de acordo com a transportadoras disponíveis.
+
+004.Calcular total da Compra - Com todos os dados do carrinho deve ser possivel calcular o total a pagar pelo calculo do frete, somatoria do valor dos livros;
+
+005.Comprar Livro - Usuarios deve poder realizar o pagamento dos item selecionado no carrinho direto pelo aplicativo, após a comfirmação do pagamento cliente deve ser informado via e-mail e poderá acompanhar pelo site a situção de sua encomenda.
+
+006.Cancelar Compra - Cliente deve poder cancelar uma comprar, essa compra não deve ser comprada caso o item ainda não tenha sido enviado caso já tenha cliente deve aguarda sua chegada e fazer o pedido de reembolso .
